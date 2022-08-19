@@ -1,0 +1,272 @@
+<html>
+<head><p align="center"><b><font size="8" color="black"><img src="E:\super market\but1.GIF" height=15% width="15%"><img src="E:\super market\sm.GIF" height=15% width="15%">CT SUPERMARKET<img src="E:\super market\sm.GIF" height=15% width="15%"><img src="E:\super market\but1.GIF" height=15% width="15%"></font></b></p>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<p align="center"><div class="slideshow-container"</p>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <center><img src="E:\super market\pic1.JPG" style="width:75%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <center><img src="E:\super market\pic2.JPG" style="width:75%">
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <center><img src="E:\super market\pic3.JPG" style="width:75%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <center><img src="E:\super market\pic4.JPG" style="width:75%">
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>  
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<marquee>
+<b><b><font size="6"color="blue"><img src="E:\super market\gk.GIF" height=20% width="12%"> W   E   L   C   O   M   E</font><b>
+TO our Supermarket Fresh item's are Available hear.Thanks for shopping in our Website!!!. have a nice Day!!...<img src="E:\super market\gkb.GIF" height=20% width="12%">
+</marquee>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #4dffc3;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+</style>
+</head>
+<body>
+
+<h2><font color="rgb(255,0,0)">MENUS</font></h2>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'ContactDetails')">ContactDetails</button>
+  <button class="tablinks" onclick="openCity(event, 'Vegtables')">Vegtables</button>
+  <button class="tablinks" onclick="openCity(event, 'Cosmetics')">Cosmetics</button>
+  <button class="tablinks" onclick="openCity(event, 'Softdrinks')">Softdrinks</button>
+  <button class="tablinks" onclick="openCity(event, 'Snacks')">Snacks</button>
+  <button class="tablinks" onclick="openCity(event, 'Fruits')">Fruits</button>
+  <button class="tablinks" onclick="openCity(event, 'Groceries')">Groceries</button>
+</div>
+
+<div id="ContactDetails" class="tabcontent">
+  <center><p><a href="a.html"><b><font size="6" color="black"><img src="E:\super market\cd.GIF" height="100" width="255"></font><b></a><br></p><p><b>Improve Your Advertising Effectiveness. ...<br><br>
+Save Money on Printing and Distribution Costs. ...<br><br>
+Easy Access to New Customers. ...<br><br>
+Easy to Use and Update. ...<br><br>
+Improve Productivity. ...<br><br>
+Educate Your Customers. ...<br><br>
+Expand Your Market. ...<br><br>
+Extend Your Local Reach.<b></p><br><br>
+</div>
+
+<div id="Vegtables" class="tabcontent">
+  <center><p><a href="b.html"><b><img src="E:\super market\vegetables.JPEG" height=100% width="50%"><b></a><br><br></p> 
+<p><font ="white">Most vegetables are naturally low in fat and calories. ...
+Vegetables are important sources of many nutrients, including potassium, dietary fiber, folate (folic acid), vitamin A, and vitamin C.
+Diets rich in potassium may help to maintain healthy blood pressure.</font></p>
+</div>
+
+<div id="Cosmetics" class="tabcontent">
+  <center><p><a href="c.html"><b><img src="E:\super market\cosmetics.JPG" height=100% width="50%"><b></a><br><br></p> 
+People use cosmetics to keep clean and enhance their beauty. These products range from lipstick and nail polish to deodorant, perfume, hairspray, shampoo, shower gel, tattoos, hair adhesives, hair removal products, hair dyes, most soaps, some tooth whiteners, and some cleansing wipes.
+</div>
+
+<div id="Softdrinks" class="tabcontent">
+ <center><p><a href="d.html"><b><img src="E:\super market\softdrinks.JPG" height=100% width="50%"><b></a><br><br></p> 
+Carbonated water is a primary ingredient of soft drinks. Carbonated water was created by Joseph Priestly in the year 1767 and has since proven to have many benefits for the gastrointestinal tract. Carbonated water eases stomachaches, quells nausea and has been proven to alleviate constipation.
+</div>
+
+<div id="Snacks" class="tabcontent">
+  <center><p><a href="e.html"><b><img src="E:\super market\snacks.JPG" height=100% width="50%"><b></a><br><br></p> 
+A snack is a small service of food and generally eaten between meals. Snacks come in a ... The middle-class etiquette of the Victorian era (1837–1901) categorized any food that did not require proper usage of utensils as lower-class.
+</div>
+
+<div id="Fruits" class="tabcontent">
+  <center><p><a href="f.html"><b><img src="E:\super market\fruits.JPG" height=100% width="50%"><b></a><br><br></p> 
+Fruits and vegetables contain important vitamins, minerals and plant chemicals. They also contain fibre. There are many varieties of fruit and vegetables available and many ways to prepare, cook and serve them. A diet high in fruit and vegetables can help protect you against cancer, diabetes and heart disease.
+</div>
+
+<div id="Groceries" class="tabcontent">
+  <center><p><a href="n1.html"><b><img src="E:\super market\groceries.JPG" height=100% width="50%"><b></a><br><br></p>
+A grocery store or grocer's shop is a retail shop that primarily sells food. A grocer is a bulk seller of food. Grocery stores also offer non-perishable foods that are packaged in bottles, boxes, and cans; some also have bakeries, butchers, delis, and fresh produce.
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
+
+</body>
+</html> 
+<body background = "E:\super market\smb.PNG"><br><br><br>
